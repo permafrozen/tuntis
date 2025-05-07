@@ -21,7 +21,9 @@ In the `home-manager` config add for `direnv`
       };
 ```
 
-and then in the cloned repo run:
+Add also a shell hook to your shell: https://direnv.net/docs/hook.html
+
+Then also allow the `.envrc` in the cloned repo, run:
 ```console
 direnv allow
 ```
