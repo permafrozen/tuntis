@@ -1,5 +1,5 @@
 {
-  description = "Description for the project";
+  description = "displays scraped curriculum from webuntis in your terminal";
 
   inputs = {
     flake-parts.url = "github:hercules-ci/flake-parts";
@@ -14,7 +14,7 @@
         packages.default = pkgs.buildGoModule {
           name = "tuntis";
           version = "0.0.1";
-          src = ./src;
+          src = ./.;
           vendorHash = null;
         };
         devShells.default =
