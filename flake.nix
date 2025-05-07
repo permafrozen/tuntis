@@ -11,7 +11,12 @@
       systems =
         [ "x86_64-linux" "aarch64-linux" "aarch64-darwin" "x86_64-darwin" ];
       perSystem = { pkgs, ... }: {
-        packages.default = pkgs.hello;
+        packages.default = pkgs.buildGoModule {
+          name = "tuntis";
+          version = "0.0.1";
+          src = ./src;
+          vendorHash = null;
+        };
         devShells.default =
           pkgs.mkShell { packages = with pkgs; [ go gopls ]; };
       };
