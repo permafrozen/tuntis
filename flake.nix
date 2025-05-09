@@ -15,6 +15,7 @@
           name = "tuntis";
           version = "0.0.1";
           src = ./.;
+          subPackages = [ "cmd/tuntis" ];
           vendorHash = null;
         };
         devShells.default =
