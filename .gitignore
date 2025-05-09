@@ -26,3 +26,8 @@ go.work.sum
 
 # Direnv
 .direnv
+
+# Bruno - ignore collections auth
+api-test/collection.bru
+api-test/bruno.json
+
